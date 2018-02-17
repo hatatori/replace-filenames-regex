@@ -10,8 +10,12 @@
 
 <?php
 
+
 $folder = "folder";
 
+
+if( !is_dir("$folder") )
+		mkdir("$folder");	
 $folder2 = scandir($folder);
 
 echo "<div id=\"list\">";
@@ -26,8 +30,7 @@ if(isset($_GET['aa'])){
 	$aa = $_GET['aa'];
 	$bb = $_GET['bb'];
 	
-	if( !is_dir("folder") )
-		mkdir("folder");	
+	
 	
 	rename("folder/$aa", "folder/$bb");
 
