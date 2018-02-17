@@ -1,0 +1,24 @@
+*{
+	font-family: monospace,"ubuntu";
+}
+.fundo{
+	padding: 2;
+	display: inline-block;
+	background-color: #cceeff;
+}
+input{
+	margin: 5;
+	padding: 5;
+}
+#list{
+	display: none;
+}
+
+#lists{
+	position: relative;
+}
+
+#list3{
+	position: absolute;
+	top: 10;
+}
