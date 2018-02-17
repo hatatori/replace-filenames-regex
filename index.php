@@ -21,7 +21,7 @@ $folder2 = scandir($folder);
 echo "<div id=\"list\">";
 
 foreach ($folder2 as $key => $value) {
-	if($key > 1)
+	if($value != "." && $value != "..")
 		echo "<p>$value</p><br><br>";
 }
 echo "</div>";
